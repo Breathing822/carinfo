@@ -8,7 +8,7 @@
     "series": "星智微卡",
     "category": "微卡",
     "energy": "纯电",
-    "image": "./assets/pages/processed/f1e.webp",
+    "image": "./assets/pages/processed/f1e.webp?v=2",
     "tag": "真能载 · 真能跑 · 真能赚",
     "summary": "覆盖厢式、栏板、仓栅，多电池方案，适合城配短驳与多货型运营。",
     "metrics": [
@@ -38,7 +38,7 @@
     "series": "星智轻卡",
     "category": "轻卡",
     "energy": "纯电",
-    "image": "./assets/pages/processed/f3e.webp",
+    "image": "./assets/pages/processed/f3e.webp?v=2",
     "tag": "宽体轻卡 · 智慧版",
     "summary": "3.5吨级纯电轻卡，三类上装覆盖，强调承载、智驾与舒适配置。",
     "metrics": [
@@ -68,7 +68,7 @@
     "series": "星享V系",
     "category": "轻客",
     "energy": "纯电",
-    "image": "./assets/pages/processed/v6e-function.webp",
+    "image": "./assets/pages/processed/v6e-function.webp?v=2",
     "tag": "4.8米车型 · 多变空间",
     "summary": "6座多用途车型，兼顾载人和载货，适合城市配送、服务用车与日常经营。",
     "metrics": [
@@ -98,7 +98,7 @@
     "series": "星享V系",
     "category": "轻客",
     "energy": "纯电",
-    "image": "./assets/pages/processed/v6e.webp",
+    "image": "./assets/pages/processed/v6e.webp?v=2",
     "tag": "明窗/盲窗 · 6方空间",
     "summary": "2座货运，主打紧凑车身，大空间和高效三电。",
     "metrics": [
@@ -128,7 +128,7 @@
     "series": "星享V系",
     "category": "轻客",
     "energy": "纯电",
-    "image": "./assets/pages/processed/v7e.webp",
+    "image": "./assets/pages/processed/v7e.webp?v=2",
     "tag": "7.5方 · 钢管能拉4米长",
     "summary": "大货厢、高承载、乘用化座舱，适合城配、安装服务与多场景经营。",
     "metrics": [
@@ -158,7 +158,7 @@
     "series": "星享V系",
     "category": "轻客",
     "energy": "纯电",
-    "image": "./assets/pages/processed/v7e-function.webp",
+    "image": "./assets/pages/processed/v7e-function.webp?v=2",
     "tag": "5/6/7/9座 · 货厢布局随心变",
     "summary": "多人座与货运能力兼顾，后排座椅支持放倒，适合客货两用场景。",
     "metrics": [
@@ -188,7 +188,7 @@
     "series": "星享V系",
     "category": "轻客",
     "energy": "纯电",
-    "image": "./assets/pages/processed/v8e.webp",
+    "image": "./assets/pages/processed/v8e.webp?v=2",
     "tag": "8.5方 · 4.5米长货",
     "summary": "更大车身与货厢容积，适合大件城配、工具设备运输和高频营运。",
     "metrics": [
@@ -218,8 +218,8 @@
     "series": "星享V系",
     "category": "轻客",
     "energy": "纯电",
-    "image": "./assets/pages/processed/v8e.webp",
-    "sheet": "./assets/pages/processed/v8e-function.webp",
+    "image": "./assets/pages/processed/v8e.webp?v=2",
+    "sheet": "./assets/pages/processed/v8e-function.webp?v=2",
     "tag": "6/7/9座 · 8.5方",
     "summary": "V8E客货两用功能版，空间更大，座椅布局更灵活。",
     "metrics": [
@@ -249,7 +249,7 @@
     "series": "星智H系",
     "category": "轻卡",
     "energy": "纯电",
-    "image": "./assets/pages/processed/h.webp",
+    "image": "./assets/pages/processed/h.webp?v=2",
     "tag": "智优双全 · 安心赚钱",
     "summary": "H8E/H9E多版本纯电智卡，覆盖中体/宽体与多类货厢，强调三电、智驾和服务生态。",
     "metrics": [
@@ -279,7 +279,7 @@
     "series": "星智T系",
     "category": "轻卡",
     "energy": "纯电",
-    "image": "./assets/pages/processed/t-e.webp",
+    "image": "./assets/pages/processed/t-e.webp?v=2",
     "tag": "硬核承载 · 超长续航",
     "summary": "T9E/TXE纯电轻卡，面向高载重、高续航与高安全运营场景。",
     "metrics": [
@@ -309,7 +309,7 @@
     "series": "星智T系",
     "category": "轻卡",
     "energy": "甲醇电动",
-    "image": "./assets/pages/processed/t-m.webp",
+    "image": "./assets/pages/processed/t-m.webp?v=2",
     "tag": "甲醇电动 · 1500km+",
     "summary": "T9M/TXM甲醇电动轻卡，兼顾长续航和强动力，适合跨城与高强度运营。",
     "metrics": [
@@ -339,7 +339,7 @@
     "series": "星智T系",
     "category": "冷藏",
     "energy": "纯电 / 甲醇电动",
-    "image": "./assets/pages/processed/t-c.webp",
+    "image": "./assets/pages/processed/t-c.webp?v=2",
     "tag": "冷藏专用 · 智慧锁鲜",
     "summary": "覆盖纯电与甲醇电动冷藏方案，面向食品、生鲜、医药等温控运输场景。",
     "metrics": [

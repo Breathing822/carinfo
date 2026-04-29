@@ -93,7 +93,7 @@ input {
   gap: 32px;
   padding: 36px;
   border: 1px solid rgba(255, 255, 255, 0.72);
-  background: var(--bg-hero), url("./assets/pages/processed/v8e.webp") center 32% / cover;
+  background: var(--bg-hero), url("./assets/pages/processed/v8e.webp?v=2") center 32% / cover;
   background-blend-mode: screen;
   box-shadow: var(--shadow);
 }
