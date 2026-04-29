@@ -124,7 +124,7 @@
   },
   {
     "id": "v7e",
-    "name": "全新星享V7E",
+    "name": "星享V7E",
     "series": "星享V系",
     "category": "轻客",
     "energy": "纯电",
@@ -154,7 +154,7 @@
   },
   {
     "id": "v7e-function",
-    "name": "全新星享V7E功能版",
+    "name": "星享V7E功能版",
     "series": "星享V系",
     "category": "轻客",
     "energy": "纯电",
