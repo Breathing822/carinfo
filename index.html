@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>远程轻商车型资料交互卡片</title>
+    <meta name="description" content="远程轻商车型资料库，按车型整理彩页参数、产品卖点与核心数据，支持筛选与搜索。" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">跳转到主要内容</a>
+    <main class="shell" id="main-content">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Farizon Commercial Vehicle Library</p>
+          <h1>远程轻商车型资料库</h1>
+          <p class="lead">按车型整理彩页参数、产品卖点与核心数据，点击卡片查看完整资料。</p>
+        </div>
+        <section class="hero-stats" aria-label="资料概览">
+          <div><strong id="modelCount">—</strong><span>车型资料</span></div>
+          <div><strong>4</strong><span>产品序列</span></div>
+          <div><strong>PDF</strong><span>来源归档</span></div>
+        </section>
+      </header>
+
+      <section class="toolbar" aria-label="车型筛选">
+        <div class="tabs" id="tabs" role="tablist" aria-label="车型分类"></div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <label class="search" for="searchInput">
+            <span class="search-label">搜索</span>
+            <input id="searchInput" type="search" placeholder="输入车型、能源、货厢、续航…" autocomplete="off" aria-label="搜索车型" />
+          </label>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换主题" title="切换主题">
+            <svg id="themeIconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg id="themeIconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Loading state -->
+      <div class="loading-state" id="loadingState" aria-live="polite">
+        <div class="skeleton-grid" aria-hidden="true">
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"></div></div>
+          <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"></div></div>
+        </div>
+        <p class="loading-text">正在加载车型数据…</p>
+      </div>
+
+      <!-- Empty state -->
+      <div class="empty-state" id="emptyState" hidden aria-live="polite">
+        <p>未找到匹配的车型 <span class="empty-query"></span></p>
+        <button type="button" class="empty-clear" id="emptyClearBtn">清除筛选条件</button>
+      </div>
+
+      <section class="grid" id="cardGrid" aria-label="车型卡片"></section>
+    </main>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <button class="scrim" id="closeScrim" aria-label="关闭详情"></button>
+      <article class="panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+        <header class="panel-header">
+          <button class="close" id="closeBtn" aria-label="关闭">×</button>
+          <button class="print-btn" id="printBtn" type="button" aria-label="打印资料" title="打印资料">打印资料</button>
+        </header>
+        <div class="detail-hero">
+          <img id="detailImage" alt="" />
+          <div class="detail-title">
+            <p id="detailSeries"></p>
+            <h2 id="detailTitle"></h2>
+            <span id="detailTag"></span>
+          </div>
+        </div>
+
+        <section class="metric-grid" id="metricGrid"></section>
+
+        <section class="detail-block">
+          <h3>核心卖点</h3>
+          <ul id="highlights"></ul>
+        </section>
+
+        <section class="detail-block">
+          <h3>关键配置</h3>
+          <div class="spec-table" id="specTable"></div>
+        </section>
+
+        <section class="detail-block">
+          <h3>资料预览</h3>
+          <img class="sheet-preview" id="sheetPreview" alt="车型彩页预览" />
+        </section>
+      </article>
+    </aside>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
